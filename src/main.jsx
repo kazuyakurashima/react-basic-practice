@@ -1,13 +1,36 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client"
 
-createRoot(document.getElementById('root')).render(
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+const App = () => {
+  return (
+    <>
+      <h1>ヤッホー</h1>
+      <p>お元気</p>
+    </>
+  )
+}
+
+root.render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+      <App />
+  </StrictMode>
+);
+
+
+
+// import { StrictMode } from 'react'
+// import { createRoot } from 'react-dom/client'
+// import './index.css'
+// import App from './App.jsx'
+
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//     <App />
+//   </StrictMode>,
+// )
 
 
 // main.jsx・・・Reactのエントリーポイント。
